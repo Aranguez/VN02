@@ -6,7 +6,7 @@
 
 body {
 	position: relative;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 /* helpers flex */
@@ -18,6 +18,20 @@ body {
 }
 .f-jc-sb {
 	justify-content: space-between;
+}
+.f-column {
+	flex-flow: column;
+}
+.f-wrap {
+	flex-wrap: wrap;
+}
+
+.ml-20 {
+	margin-left: 20px;
+}
+
+.ml-30 {
+	margin-left: 30px;
 }
 
 h1,
@@ -37,10 +51,11 @@ h6 {
 	color: crimson;
 }
 
-.titulo {
-	font-style: italic;
+.nombre-alumno {
 	color: crimson;
 	margin-bottom: 30px;
+	font-size: 2.5rem;
+	font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -77,13 +92,17 @@ header nav a {
 	display: inline-block;
 }
 
-.alumnos {
-	margin: 20px 0;
+header .home-link {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
 }
 
-.alumnos li {
-	list-style: none;
-	display: block;
+.divider {
+	margin: 30px 0;
+}
+
+.alumno-img {
+	border-radius: 50%;
 }
 
 .subtitulo {
@@ -102,17 +121,20 @@ header nav a {
 	left: -10px;
 }
 
-.alumnos a {
+.materia {
 	display: inline-block;
-	width: auto;
-	margin-bottom: 20px;
+	width: 15%;
+	padding: 1.2rem;
+	border: 1px solid #ccc;
+	margin-bottom: 1.2rem;
 }
 
 footer {
 	background-color: #e0e0e0;
 	padding: 20px 30px;
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	text-align: center;
+	width: 100%;
 	position: absolute;
 	bottom: 0;
 	left: 0;
