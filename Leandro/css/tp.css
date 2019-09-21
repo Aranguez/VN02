@@ -1,49 +1,114 @@
 * {
-	margin: 0;
-	padding: 0;
-	font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
 }
 
 body {
-	position: relative;
-	height: 100vh;
+  position: relative;
+  height: 100vh;
 }
 
 /* helpers flex */
 .flex {
-	display: flex;
+  display: flex;
 }
 .f-ai-center {
-	align-items: center;
+  align-items: center;
 }
 .f-jc-sb {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 .f-column {
-    flex-flow: column;
+  flex-flow: column;
 }
 
 .container {
-	width: 80%;
-	max-width: 1200px;
-	margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
-    padding: 30px 0;
-    border-bottom: 1px solid #ccc;
+  padding: 30px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+header .iconos {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .iconos > div { 
+  width: 25px;
+  height: 25px;
+}
+
+header .iconos > div a {
+  border-radius: 50%;
 }
 
 nav {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
-nav a {
-    font-size: .7rem;
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: blanchedalmond;
-    color: #000;
+a {
+  font-size: 0.7rem;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: blanchedalmond;
+  color: #000;
+}
+
+section,
+aside,
+footer {
+  padding-bottom: 40px;
+  border-bottom: 2px solid #ccc;
+}
+
+section div article:first-child {
+  display: inline-block;
+  width: 50%;
+  padding-right: 20px;
+}
+
+section div article:last-child {
+  display: inline-block;
+  width: 50%;
+  padding-left: 20px;
+}
+
+section div article:first-child img,
+section div article:last-child img,
+aside div article:first-child img,
+aside div article:last-child img  {
+  width: 100%;
+}
+
+aside div article:first-child {
+  width: 70%;
+  padding-right: 20px;
+}
+
+aside div article:last-child {
+  width: 30%;
+  padding-left: 20px;
+}
+
+footer div div:first-child {
+  width: 70%;
+  padding-right: 20px;
+}
+
+footer div div:last-child {
+  width: 30%;
+  padding-left: 20px;
+}
+
+footer img {
+  width: 100%;
 }
