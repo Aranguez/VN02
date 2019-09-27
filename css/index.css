@@ -127,6 +127,21 @@ article {
 	margin: 40px 0;
 }
 
+.alumnos .alumno {
+    text-align: center;
+}
+
+.alumnos .alumno img {
+    transition: border .3s ease;
+    margin-bottom: 1.2rem;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+.alumnos .alumno img:hover {
+    border-color: crimson;
+}
+
 footer {
 	background-color: #e0e0e0;
 	padding: 20px 30px;

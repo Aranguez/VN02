@@ -11,13 +11,27 @@ body {
 
 /* helpers flex */
 .flex {
-	display: flex;
+  display: flex;
 }
 .f-ai-center {
-	align-items: center;
+  align-items: center;
 }
 .f-jc-sb {
-	justify-content: space-between;
+  justify-content: space-between;
+}
+.f-column {
+  flex-flow: column;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.ml-20 {
+	margin-left: 20px; 
+}
+
+.ml-30 {
+	margin-left: 30px; 
 }
 .f-column {
 	flex-flow: column;
