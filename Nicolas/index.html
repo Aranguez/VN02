@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>
       UBA | FADU | DG | DGPC | Cátedra Ocampo | Christian Sesin, Adriana Luna,
       Marisol Bicego, Tiago Martí Porto, Daniel Higa, Sebastián Sánchez, Magalí
@@ -13,24 +14,97 @@
   </head>
   <body>
     <header>
-      <h1>VN02</h1>
+      <div class="container flex f-ai-center f-jc-sb">
+        <a href="../index.html">
+          <h1 class="home-link">VN02</h1>
+        </a>
+        <nav>
+          <a href="../index.html">Inicio /</a>
+          <a href="../plan.html">Plan /</a>
+          <a href="../mapa.html">Mapa /</a>
+          <a href="./tp/index.html">TP</a>
+        </nav>
+      </div>
     </header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="../plan.html">Plan</a></li>
-        <li><a href="../mapa.html">Mapa</a></li>
-        <li><a href="../tp/index.html">Inicio</a></li>
-      </ul>
-    </nav>
+
     <section>
-      <article>
-        <h2>Nicolás López Peduto</h2>
-        <h3>Materias Aprobadas</h3>
-        <p>Diseño 1: Blanco</p>
-        <p>Diseño 2: Arbos Szmukler</p>
-        <p>Diseño 3: Campos</p>
-      </article>
+      <div class="container">
+        <article>
+          <div class="flex f-ai-center">
+            <img
+              class="alumno-img"
+              src="../img/nicolas-peduto.png"
+              alt="nicolas"
+            />
+            <h2 class="nombre-alumno ml-30">Nicolás Peduto</h2>
+          </div>
+          <hr class="divider" />
+          <h3 class="subtitulo">Materias aprobadas</h3>
+          <div class="flex f-jc-sb f-wrap">
+            <div class="materia">
+              <h4>DAV I</h4>
+              <p>Blanco</p>
+            </div>
+
+            <div class="materia">
+              <h4>DAV II</h4>
+              <p>Arbos - Szmukler</p>
+            </div>
+
+            <div class="materia">
+              <h4>DAV III</h4>
+              <p>Campos</p>
+            </div>
+
+            <div class="materia">
+              <h4>Iluminación y cámara I</h4>
+              <p>Barone</p>
+            </div>
+
+            <div class="materia">
+              <h4>Iluminación y cámara II</h4>
+              <p>Montes de Oca</p>
+            </div>
+
+            <div class="materia">
+              <h4>Montaje I</h4>
+              <p>Constantini</p>
+            </div>
+
+            <div class="materia">
+              <h4>Montaje II</h4>
+              <p>Szmukler</p>
+            </div>
+
+            <div class="materia">
+              <h4>HAMI</h4>
+              <p>Manetti</p>
+            </div>
+
+            <div class="materia">
+              <h4>Hamal</h4>
+              <p>Marino</p>
+            </div>
+
+            <div class="materia">
+              <h4>Dirección de Actores</h4>
+              <p>Ex-Gónzalez</p>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
+    <footer>
+      <div class="container">
+        <p>
+          Los contenidos publicados en estas páginas son en el marco de un trabajo
+          práctico realizado por alumnos de una materia de la Universidad de
+          Buenos Aires. Los textos, logotipos, fotografías, tipografías, etc.,
+          pueden no ser de su autoría y sólo son utilizados a los fines prácticos
+          del ejercicio.
+        </p>
+      </div>
+    </footer>
   </body>
+  <script src="js/Header.js"></script>
 </html>
