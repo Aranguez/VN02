@@ -6,7 +6,7 @@
 
 body {
 	position: relative;
-	height: 100%;
+	min-height: 100vh;
 }
 
 /* helpers flex */
@@ -32,6 +32,20 @@ body {
 
 .ml-30 {
 	margin-left: 30px; 
+}
+.f-column {
+	flex-flow: column;
+}
+.f-wrap {
+	flex-wrap: wrap;
+}
+
+.ml-20 {
+	margin-left: 20px;
+}
+
+.ml-30 {
+	margin-left: 30px;
 }
 
 h1,
@@ -92,7 +106,7 @@ header nav a {
 	display: inline-block;
 }
 
-header .home-link{
+header .home-link {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 }
@@ -132,8 +146,9 @@ header .home-link{
 footer {
 	background-color: #e0e0e0;
 	padding: 20px 30px;
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	text-align: center;
+	width: 100%;
 	position: absolute;
 	bottom: 0;
 	left: 0;
