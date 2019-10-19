@@ -1,0 +1,55 @@
+.other-login {
+    margin-top: 4rem;
+}
+
+.box-image-profile {
+    border-radius: 10px;
+    background-color: #a7a7a7;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box-image-profile h4 {
+    width: 70%;
+}
+
+.grid {
+    display: grid;
+}
+
+.topics > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.topics .topic1 { grid-area: topic1; }
+.topics .topic2 { grid-area: topic2; }
+.topics .topic3 { grid-area: topic3; }
+.topics .topic4 { grid-area: topic4; }
+.topics .topic5 { grid-area: topic5; }
+.topics .topic6 { grid-area: topic6; }
+.topics .topic7 { grid-area: topic7; }
+
+.topics {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px 40px 40px;
+    grid-gap: 10px;
+    grid-template-areas:
+        "topic1 topic2 topic2"
+        "topic3 topic3 topic4"
+        "topic5 topic6 topic7";
+}
+
+.success-icon {
+  font-size: 4rem;
+}
+
+
+
